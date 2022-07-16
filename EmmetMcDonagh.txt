@@ -1,0 +1,245 @@
+
+Command: date
+Thu Apr 22 16:31:43 UTC 2021
+Used to change the password of a user account.
+
+Command: hostname
+ip-172-31-87-57
+Used to view a computer’s hostname and domain name.
+
+Command: arch
+x86_64
+It is used to print machine hardware name.
+
+Command: uname -a
+Linux ip-172-31-87-57 5.4.0-1038-aws #40-Ubuntu SMP Fri Feb 5 23:50:40 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+Prints basic information about a computer’s software and hardware.
+
+Command: uptime
+ 16:48:44 up 38 days, 19:25,  4 users,  load average: 0.00, 0.00, 0.00
+It gives you the time for which the system has been running.
+
+Command: whoami
+emmetmcdonagh
+Prints the username of the current user. In other words, it displays the name of the currently logged-in user.
+
+Command: who
+derekhiggins pts/0        2021-04-22 14:21 (193.178.96.210)
+marinanikonchuk pts/1        2021-04-22 15:53 (45.139.74.30)
+emmetmcdonagh pts/3        2021-04-22 16:16 (194.125.25.189)
+janaholikova pts/7        2021-04-21 11:13 (37.228.249.69)
+Prints a list of who is logged in. It can also show the current run level, time of the last system boot, and more.
+
+Command: finger
+Login            Name       Tty      Idle  Login Time   Office     Office Phone
+derekhiggins                pts/0    1:35  Apr 22 14:21 (193.178.96.210)
+emmetmcdonagh               pts/3          Apr 22 16:16 (194.125.25.189)
+janaholikova                pts/7          Apr 21 11:13 (37.228.249.69)
+marinanikonchuk             pts/1      53  Apr 22 15:53 (45.139.74.30)
+User information lookup command used in Linux to check the information of any currently logged in users from the terminal.
+
+Command: w
+ 17:02:27 up 38 days, 19:39,  4 users,  load average: 0.00, 0.00, 0.00
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+derekhig pts/0    193.178.96.210   14:21    1:38m  0.04s  0.00s pager
+marinani pts/1    45.139.74.30     15:53   56:51   0.03s  0.00s nano table.sh
+emmetmcd pts/3    194.125.25.189   16:16    1.00s  0.08s  0.00s w
+janaholi pts/7    37.228.249.69    Wed11   11.00s  0.20s  0.13s vi scriptsample.sh
+Displays summary information related to users that are currently logged in, what each user is currently doing, and what load all the activity is imposing on the computer itself.
+
+Command: top
+top - 17:04:54 up 38 days, 19:41,  4 users,  load average: 0.00, 0.00, 0.00
+Tasks: 127 total,   1 running, 126 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  6.2 sy,  0.0 ni, 93.8 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :    978.6 total,     74.2 free,    255.3 used,    649.1 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.    544.0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0  170944  11352   6692 S   0.0   1.1   4:11.14 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.11 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-kblockd
+      9 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     10 root      20   0       0      0      0 S   0.0   0.0   1:51.80 ksoftirqd/0
+     11 root      20   0       0      0      0 I   0.0   0.0   1:49.25 rcu_sched
+     12 root      rt   0       0      0      0 S   0.0   0.0   0:17.18 migration/0
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/0
+     14 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kdevtmpfs
+     15 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+     16 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_tasks_kthre
+     17 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kauditd
+     18 root      20   0       0      0      0 S   0.0   0.0   0:00.00 xenbus
+     19 root      20   0       0      0      0 S   0.0   0.0   0:00.01 xenwatch
+     20 root      20   0       0      0      0 S   0.0   0.0   0:01.00 khungtaskd
+     21 root      20   0       0      0      0 S   0.0   0.0   0:00.00 oom_reaper
+     22 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 writeback
+     23 root      20   0       0      0      0 S   0.0   0.0   0:00.15 kcompactd0
+     24 root      25   5       0      0      0 S   0.0   0.0   0:00.00 ksmd
+     25 root      39  19       0      0      0 S   0.0   0.0   0:07.59 khugepaged
+     71 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kintegrityd
+     72 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kblockd
+     73 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 blkcg_punt_bio
+     74 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 tpm_dev_wq
+     75 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 ata_sff
+     76 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 md
+     77 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 edac-poller
+     78 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 devfreq_wq
+     79 root      rt   0       0      0      0 S   0.0   0.0   0:00.00 watchdogd
+     82 root      20   0       0      0      0 S   0.0   0.0   0:11.89 kswapd0
+     83 root      20   0       0      0      0 S   0.0   0.0   0:00.00 ecryptfs-kthrea
+     85 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kthrotld
+     86 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 nvme-wq
+     87 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 nvme-reset-wq
+     88 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 nvme-delete-wq
+     89 root      20   0       0      0      0 S   0.0   0.0   0:00.00 scsi_eh_0
+     90 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 scsi_tmf_0
+     91 root      20   0       0      0      0 S   0.0   0.0   0:00.00 scsi_eh_1
+     92 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 scsi_tmf_1
+     94 root       0 -20       0      0      0 I   0.0   0.0   0:45.99 kworker/0:1H-kblockd
+     95 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 ipv6_addrconf
+    104 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kstrp
+    107 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/u31:0
+    120 root      20   0       0      0      0 S   0.0   0.0   0:17.67 jbd2/xvda1-8
+    121 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 ext4-rsv-conver
+    159 root      19  -1  185332  66132  64316 S   0.0   6.6  25:08.46 systemd-journal
+    192 root      20   0   18964   4372   2920 S   0.0   0.4   0:34.14 systemd-udevd
+    204 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 cryptd
+    267 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kaluad
+    268 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kmpath_rdacd
+    269 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kmpathd
+    270 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kmpath_handlerd
+    271 root      rt   0  280200  17992   8200 S   0.0   1.8   3:55.29 multipathd
+    279 root       0 -20       0      0      0 S   0.0   0.0   0:00.04 loop0
+    282 root       0 -20       0      0      0 S   0.0   0.0   0:00.01 loop1
+    284 root       0 -20       0      0      0 S   0.0   0.0   0:00.00 loop2
+    303 systemd+  20   0   90424   4928   4056 S   0.0   0.5   0:04.04 systemd-timesyn
+    377 systemd+  20   0   26924   5392   4424 S   0.0   0.5   0:05.60 systemd-network
+    380 systemd+  20   0   24092   9624   5464 S   0.0   1.0   0:05.79 systemd-resolve
+    443 root      20   0  241668   6324   4576 S   0.0   0.6   7:22.08 accounts-daemon
+    444 root      20   0    2540    856    788 S   0.0   0.1   0:00.00 acpid
+    451 root      20   0    8536   2988   2712 S   0.0   0.3   0:04.63 cron
+    452 message+  20   0    7852   4728   3580 S   0.0   0.5   0:16.08 dbus-daemon
+    463 root      20   0   29264  12108   4476 S   0.0   1.2   0:00.07 networkd-dispat
+    465 syslog    20   0  224500   4872   3284 S   0.0   0.5   4:10.89 rsyslogd
+    471 root      20   0   17460   7112   5444 S   0.0   0.7   0:11.83 systemd-logind
+    475 daemon    20   0    3792   2224   2052 S   0.0   0.2   0:00.04 atd
+    588 root      20   0    7352   2132   2008 S   0.0   0.2   0:00.00 agetty
+    626 root      20   0    5828   1788   1676 S   0.0   0.2   0:00.02 agetty
+    627 root      20   0  242048   6772   5128 S   0.0   0.7   0:02.75 polkitd
+    645 root      20   0  108088  13100   5448 S   0.0   1.3   0:00.06 unattended-upgr
+   1074 root      20   0  645572  10024      0 S   0.0   1.0   1:31.14 amazon-ssm-agen
+   1100 root      20   0  734388  16752      0 S   0.0   1.7   1:13.35 ssm-agent-worke
+  50766 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 xfsalloc
+  50767 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 xfs_mru_cache
+  52504 root      20   0   12176   5256   4324 S   0.0   0.5   6:02.33 sshd
+  91239 root       0 -20       0      0      0 S   0.0   0.0   0:00.00 loop5
+ 328916 root       0 -20       0      0      0 S   0.0   0.0   0:00.16 loop6
+ 594181 root       0 -20       0      0      0 S   0.0   0.0   0:00.00 loop3
+ 836451 angelrua  20   0   18452   8364   6836 S   0.0   0.8   0:01.22 systemd
+ 836457 angelrua  20   0  172156   4780      0 S   0.0   0.5   0:00.00 (sd-pam)
+ 838257 angelrua  20   0   11216   4156   3460 S   0.0   0.4  24:48.99 top
+ 838599 angelrua  20   0   11216   4044   3348 S   0.0   0.4  24:56.93 top
+ 965913 root       0 -20       0      0      0 S   0.0   0.0   0:00.18 loop7
+ 965950 root      20   0  642360  19588   5348 S   0.0   2.0   1:07.19 snapd
+1208720 paulobo+  20   0   18468   8216   6772 S   0.0   0.8   0:00.87 systemd
+1208724 paulobo+  20   0  172156   4792      0 S   0.0   0.5   0:00.00 (sd-pam)
+1209392 paulobo+  20   0   11240   4076   3380 S   0.0   0.4  18:24.10 top
+1246933 jamesly+  20   0   18452   8268   6816 S   0.0   0.8   0:00.84 systemd
+1246935 jamesly+  20   0  172156   4792      0 S   0.0   0.5   0:00.00 (sd-pam)
+1247188 jamesly+  20   0   11236   4008   3316 S   0.0   0.4  17:41.67 top
+1989420 root      20   0   13924   8832   7372 S   0.0   0.9   0:00.06 sshd
+1989437 janahol+  20   0   18460   8928   7468 S   0.0   0.9   0:00.14 systemd
+1989439 janahol+  20   0  172156   4800      0 S   0.0   0.5   0:00.00 (sd-pam)
+1989514 janahol+  20   0   14056   5976   4496 S   0.0   0.6   0:00.97 sshd
+1989515 janahol+  20   0   10032   4888   3184 S   0.0   0.5   0:00.07 bash
+2079338 root      20   0   13924   8992   7520 S   0.0   0.9   0:00.04 sshd
+2079366 derekhi+  20   0   18452   8944   7500 S   0.0   0.9   0:00.03 systemd
+2079368 derekhi+  20   0  172156   4800      0 S   0.0   0.5   0:00.00 (sd-pam)
+2079442 derekhi+  20   0   14060   6084   4600 S   0.0   0.6   0:00.06 sshd
+2079443 derekhi+  20   0   10032   5180   3440 S   0.0   0.5   0:00.04 bash
+2081293 derekhi+  20   0    8968   4080   2932 S   0.0   0.4   0:00.00 man
+2081303 derekhi+  20   0    7588   2236   1972 S   0.0   0.2   0:00.00 pager
+2082054 root      20   0   13920   9032   7576 S   0.0   0.9   0:00.01 sshd
+2082071 marinan+  20   0   18452   9296   7844 S   0.0   0.9   0:00.03 systemd
+2082076 marinan+  20   0  172156   4804      4 S   0.0   0.5   0:00.00 (sd-pam)
+2082077 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker/0:1-cgroup_destroy
+2082152 marinan+  20   0   14052   5968   4492 S   0.0   0.6   0:00.02 sshd
+2082153 marinan+  20   0   10032   5168   3472 S   0.0   0.5   0:00.03 bash
+2082355 janahol+  20   0   23796  10140   6448 S   0.0   1.0   0:00.15 vi
+2082448 root      20   0       0      0      0 I   0.0   0.0   0:00.07 kworker/u30:0-events_unbound
+2082527 marinan+  20   0    8836   3936   3060 S   0.0   0.4   0:00.00 nano
+2082786 root      20   0   13924   8984   7524 S   0.0   0.9   0:00.02 sshd
+2082802 emmetmc+  20   0   18456   9528   8072 S   0.0   1.0   0:00.03 systemd
+2082803 root      20   0       0      0      0 I   0.0   0.0   0:00.52 kworker/0:2-mm_percpu_wq
+2082807 emmetmc+  20   0  172156   4804      4 S   0.0   0.5   0:00.00 (sd-pam)
+2082903 emmetmc+  20   0   14056   6092   4612 S   0.0   0.6   0:00.09 sshd
+2082904 emmetmc+  20   0   10032   5064   3300 S   0.0   0.5   0:00.08 bash
+2082988 root      20   0  450420  23328  20172 S   0.0   2.3   0:00.21 fwupd
+2083558 root      20   0       0      0      0 I   0.0   0.0   0:00.02 kworker/u30:2-events_power_efficient
+2084406 root      20   0   13204   7916   6816 S   0.0   0.8   0:00.01 sshd
+2084407 sshd      20   0   12176   4580   3672 S   0.0   0.5   0:00.00 sshd
+2084408 root      20   0   13204   7944   6844 S   0.0   0.8   0:00.00 sshd
+2084409 sshd      20   0   12176   4552   3640 S   0.0   0.5   0:00.00 sshd
+2084411 emmetmc+  20   0   10872   3636   3176 R   0.0   0.4   0:00.00 top
+It displays the Linux tasks.
+
+Command: history
+    1  tree
+    2  echo Command: date >> EmmetMcDonagh.txt
+    3  date >> EmmetMcDonagh.txt
+    4  echo Used to change the password of a user account. >> EmmetMcDonagh.txt
+    5  echo >> EmmetMcDonagh.txt
+    6  clear
+    7  tree
+    8  cd
+    9  tree
+   10  cd Assignment
+   11  echo Command: hostname >> EmmetMcDonagh.txt
+   12  hostname >> EmmetMcDonagh.txt
+   13  echo Used to view a computer’s hostname and domain name.>> EmmetMcDonagh.txt
+   14  echo >> EmmetMcDonagh.txt
+   15  echo Command: arch >> EmmetMcDonagh.txt
+   16  chmod +x EmmetMcDonagh.txt
+   17  ./EmmetMcDonagh.txt
+   18  clear
+   19  tree
+   20  ./EmmetMcDonagh.txt
+   21  vim EmmetMcDonagh.txt
+   22  clear
+   23  tree
+   24  vim EmmetMcDonagh.txt
+   25  arch >> EmmetMcDonagh.txt
+   26  echo It is used to print machine hardware name.>> EmmetMcDonagh.txt
+   27  echo >> EmmetMcDonagh.txt
+   28  echo Command: uname -a >> EmmetMcDonagh.txt
+   29  uname -a >> EmmetMcDonagh.txt
+   30  echo Prints basic information about a computer’s software and hardware. >> EmmetMcDonagh.txt
+   31  echo >> EmmetMcDonagh.txt
+   32  echo Command: uptime >> EmmetMcDonagh.txt
+   33  uptime >> EmmetMcDonagh.txt
+   34  echo It gives you the time for which the system has been running. >> EmmetMcDonagh.txt
+   35  echo >> EmmetMcDonagh.txt
+   36  echo Command: whoami >> EmmetMcDonagh.txt
+   37  whoami >> EmmetMcDonagh.txt
+   38  echo Prints the username of the current user. In other words, it displays the name of the currently logged-in user. >> EmmetMcDonagh.txt
+   39  echo >> EmmetMcDonagh.txt
+   40  echo Command: who >> EmmetMcDonagh.txt
+   41  who >> EmmetMcDonagh.txt
+   42  echo Prints a list of who is logged in. It can also show the current run level, time of the last system boot, and more. >> EmmetMcDonagh.txt
+   43  echo >> EmmetMcDonagh.txt
+   44  echo Command: finger >> EmmetMcDonagh.txt
+   45  finger >> EmmetMcDonagh.txt
+   46  echo User information lookup command used in Linux to check the information of any currently logged in users from the terminal. >> EmmetMcDonagh.txt
+   47  echo >> EmmetMcDonagh.txt
+   48  echo Command: w >> EmmetMcDonagh.txt
+   49  w >> EmmetMcDonagh.txt
+   50  echo Displays summary information related to users that are currently logged in, what each user is currently doing, and what load all the activity is imposing on the computer itself. >> EmmetMcDonagh.txt
+   51  echo >> EmmetMcDonagh.txt
+   52  echo Command: top >> EmmetMcDonagh.txt
+   53  top -b -n 1 >> EmmetMcDonagh.txt
+   54  echo It displays the Linux tasks. >> EmmetMcDonagh.txt
+   55  echo >> EmmetMcDonagh.txt
+   56  echo Command: history >> EmmetMcDonagh.txt
+   57  history >> EmmetMcDonagh.txt
+It shows the user history of all commands which were typed in terminal.
